@@ -4,5 +4,8 @@ class SessionsController < ApplicationController
 
   def create
     if !session[:name] || session[:name] == []
+      render "new"
+    else
+    end
   end
 end
