@@ -3,5 +3,6 @@ class SessionsController < ApplicationController
   end
 
   def create
+    if !session[:name] || session[:name] == []
   end
 end
