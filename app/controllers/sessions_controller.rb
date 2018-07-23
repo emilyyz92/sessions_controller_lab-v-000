@@ -6,6 +6,7 @@ class SessionsController < ApplicationController
     if !session[:name] || session[:name] == []
       render "new"
     else
+      redirect_to '/'
     end
   end
 end
